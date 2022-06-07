@@ -10,20 +10,21 @@ My thesis project at the university was related to programming,
 and since then, I have gotten into it. To my mind, front-end development 
 is the first step for me on the path to full-stack web development.
 
-## Hard Skills 
-* HTML
-* CSS
-* Flexbox/Grid
-* SASS/SCSS
-* BEM
-* Git
-* JavaScript
-* Photoshop/Figma
+## Skills
+* Hard skills
++ HTML
++ CSS
++ Flexbox/Grid
++ SASS/SCSS
++ BEM
++ Git
++ JavaScript
++ Photoshop/Figma
 
-## Soft Skills
-* Communication/Teamwork
-* Time management
-* Responsibility
+* Soft Skills
++ Communication/Teamwork
++ Time management
++ Responsibility
 
 ## Code examples
 
