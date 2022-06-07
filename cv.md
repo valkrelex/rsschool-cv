@@ -1,8 +1,8 @@
 # Daria Trubnikova
 ## Contacts
 
-E-mail: *valkrelex@gmail.com*
-Discord: *Дарья (valkrelex)#2209*
+- Email: *valkrelex@gmail.com*
+- Discord: *Дарья (valkrelex)#2209*
 
 ## About me
 
