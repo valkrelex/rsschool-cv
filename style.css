@@ -1,4 +1,130 @@
+:root {
+    --main-bg-color: white;
+    --text-gray: #828282;
+    --nav-text-size: 18px;
+    --text-dark: #070707;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+    font-weight: normal;
+	src: local('Gilroy'),
+		url(fonts/Gilroy-Medium.eot),
+        url(fonts/Gilroy-Medium.woff);
+}
+
+@font-face {
+	font-family: 'Gilroy';
+    font-weight: bold;
+	src: local('Gilroy'),
+		url(fonts/Gilroy-Bold.eot),
+        url(fonts/Gilroy-Bold.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Gilroy';
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    /* display: flex;
+    align-items: center; */
+    color: var(--text-gray);
+    font-size: var(--nav-text-size);
+    font-weight: bold;
+}
+
+.header__container {
+    border-bottom: 1px solid var(--text-gray);
+}
+
+.main-navigation__list {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navigation__item {
+    list-style-type: none;
+}
+
+.main-navigation__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-navigation__link:hover {
+    color: var(--text-dark);
+}
+
+/* about me */
+
+.about {
+    color: var(--text-dark);
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.about__title {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 48px;
+    width: 150px;
+}
+
+.languages {
+    text-transform: uppercase;
+    transform: rotate(-90deg) translate(17px);
+}
+
+.lang {
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.lang:hover {
+    color: var(--text-dark);
+}
+
+.lang--active {
+    color: var(--text-dark);
+    cursor: text;
 }
