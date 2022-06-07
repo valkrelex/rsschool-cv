@@ -12,19 +12,19 @@ is the first step for me on the path to full-stack web development.
 
 ## Skills
 * Hard skills
-+ HTML
-+ CSS
-+ Flexbox/Grid
-+ SASS/SCSS
-+ BEM
-+ Git
-+ JavaScript
-+ Photoshop/Figma
+    + HTML
+    + CSS
+    + Flexbox/Grid
+    + SASS/SCSS
+    + BEM
+    + Git
+    + JavaScript
+    + Photoshop/Figma
 
 * Soft Skills
-+ Communication/Teamwork
-+ Time management
-+ Responsibility
+    + Communication/Teamwork
+    + Time management
+    + Responsibility
 
 ## Code examples
 
