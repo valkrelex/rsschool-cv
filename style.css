@@ -3,6 +3,7 @@
     --text-gray: #828282;
     --nav-text-size: 18px;
     --text-dark: #070707;
+    --gray-bg-color: #f6f6f6;
 }
 
 @font-face {
@@ -34,12 +35,28 @@ html, body {
     background-color: white;
     font-family: 'Gilroy';
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-gray {
+    background-color: var(--gray-bg-color);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 36px;
 }
 
 /* Header */
@@ -77,7 +94,7 @@ html, body {
     color: var(--text-dark);
 }
 
-/* about me */
+/* about*/
 
 .about {
     color: var(--text-dark);
@@ -127,4 +144,22 @@ html, body {
 .lang--active {
     color: var(--text-dark);
     cursor: text;
+}
+
+/* about me */
+
+.about-me__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me__text {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.about-me__text:last-child {
+    margin-bottom: 0;
 }
