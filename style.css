@@ -228,3 +228,54 @@ html, body {
     right: 0;
     transition: 0.3s;
 }
+
+/* Skills */
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 130px;
+    row-gap: 70px;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    max-width: 170px;
+    min-height: 207px;
+}
+
+.skills-item__title {
+    font-size: 14px;
+}
+
+
+
+.skills__levels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__level {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url('Star.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.black-star {
+    filter: invert(100%);
+}
