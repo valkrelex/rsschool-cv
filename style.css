@@ -282,11 +282,21 @@ html, body {
 
 /* footer */
 
+.footer {
+    padding-top: 40px;
+    font-size: 16px;
+}
+
 .footer__container {
+}
+
+.footer__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-top: 1px solid var(--text-gray);
+    min-height: 90px;
 }
 
 .footer__rss,
@@ -309,4 +319,35 @@ html, body {
     background-image: url("github-logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.contacts {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__item {
+    list-style: none;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    vertical-align: center;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__link {
+    text-decoration: none;
+    color: inherit;
+    height: 24px;
+}
+
+.contacts-image__link {
+    margin-right: 10px;
 }
