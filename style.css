@@ -279,3 +279,34 @@ html, body {
 .black-star {
     filter: invert(100%);
 }
+
+/* footer */
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__rss,
+.footer__github {
+    text-decoration: none;
+    font-size: 0;
+}
+
+.footer__rss {
+    width: 100px;
+    background-image: url("rss-logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 60px;
+}
+
+.footer__github {
+    width: 40px;
+    min-height: 40px;
+    background-image: url("github-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
