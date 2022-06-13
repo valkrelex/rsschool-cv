@@ -58,6 +58,7 @@ html, body {
     font-weight: bold;
     font-size: 34px;
     margin-bottom: 36px;
+    text-align: center;
 }
 
 .btn {
@@ -81,8 +82,6 @@ html, body {
 /* Header */
 
 .header {
-    /* display: flex;
-    align-items: center; */
     color: var(--text-gray);
     font-size: var(--nav-text-size);
     font-weight: bold;
@@ -98,6 +97,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main-navigation__item {
@@ -129,6 +129,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 30px;
 }
@@ -297,6 +298,46 @@ html, body {
     font-size: 14px;
     width: 400px;
 }
+
+/* education and english */
+
+.edu-eng__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education,
+.english {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education__description,
+.education__subtitle {
+    text-align: center;
+}
+
+.education__period {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.education__period:last-child {
+    margin-bottom: 0;
+}
+
+
+.english {
+    border-left: 1px solid var(--text-gray);
+}
+
+.english__text {
+    text-align: center;
+}
+
 
 /* footer */
 
