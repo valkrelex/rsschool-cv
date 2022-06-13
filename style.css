@@ -280,6 +280,24 @@ html, body {
     filter: invert(100%);
 }
 
+/* code example */
+.code__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code__text {
+    width: 400px;
+    text-align: center;
+}
+
+.code__example {
+    display: block;
+    font-size: 14px;
+    width: 400px;
+}
+
 /* footer */
 
 .footer {

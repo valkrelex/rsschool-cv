@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stackoverflow-light.min.css">
+    <script src="highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>Daria Trubnikova</title>
 </head>
 <body>
@@ -170,6 +173,37 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="section code bg-gray">
+        <div class="container code__container">
+            <h2 class="title code-example__title">Code example</h2>
+            <p class="code__text">
+                Code examples can be seen in my 
+                <a href="https://github.com/valkrelex">GitHub account</a> 
+                 or you can see my FizzBuzz solving below:
+            </p>
+            <pre>
+                <code class="code__example">
+    function fizzbuzz(n) {
+        let result = [];
+        for (let i = 0; i &lt; n; i++) {
+            result.push(i + 1);
+            if((result[i] % 3 === 0) && 
+                (result[i] % 5 === 0)) {
+                    result[i] = 'FizzBuzz';
+            }
+            if(result[i] % 3 === 0) {
+                result[i] = 'Fizz';
+            }
+            if(result[i] % 5 === 0) {
+                result[i] = 'Buzz';
+            }
+        }
+        return result;
+    }
+                </code>
+            </pre>
         </div>
     </section>
     <section class="section portfolio bg-gray">
