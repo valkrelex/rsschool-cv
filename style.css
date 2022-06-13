@@ -218,6 +218,8 @@ html, body {
 
 .portfolio__subtitle {
     margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .portfolio__text {
