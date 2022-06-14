@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stackoverflow-light.min.css">
-    <script src="highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
     <title>Daria Trubnikova</title>
 </head>
 <body>
@@ -16,37 +14,37 @@
             <nav class="main-navigation">
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
-                        <a href="#contacts" class="main-navigation__link">
+                        <a href="#contacts" class="main-navigation__link" data-i18n="contacts">
                             Contacts
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#about-me" class="main-navigation__link">
+                        <a href="#about-me" class="main-navigation__link"  data-i18n="about-me">
                             About me
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#skills" class="main-navigation__link">
+                        <a href="#skills" class="main-navigation__link" data-i18n="skills">
                             Skills
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#code-example" class="main-navigation__link">
+                        <a href="#code-example" class="main-navigation__link" data-i18n="code-example">
                             Code example
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#portfolio" class="main-navigation__link">
+                        <a href="#portfolio" class="main-navigation__link" data-i18n="projects">
                             Projects
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#education" class="main-navigation__link">
+                        <a href="#education" class="main-navigation__link" data-i18n="education">
                             Education
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#english" class="main-navigation__link">
+                        <a href="#english" class="main-navigation__link" data-i18n="english">
                             English
                         </a>
                     </li>
@@ -57,21 +55,21 @@
     <section class="about">
         <div class="container about__container">
             <div class="about-info">
-                <h1 class="about__title">
+                <h1 class="about__title" data-i18n="name">
                     Daria Trubnikova
                 </h1>
                 <div class="about__info">
                     <p class="about-text">
                         Junior Frontend Developer  
                     </p>
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="age">
                         28 years old, Moscow
                     </p>
                 </div>
                 <div class="about__lang languages">
-                    <button class="lang__ru lang">ru</button>
+                    <button class="lang__ru lang" data-i18n="rus">ru</button>
                     <span>|</span>
-                    <button class="lang__eng lang lang--active">eng</button>
+                    <button class="lang__eng lang lang--active" data-i18n="eng">eng</button>
                 </div>
             </div>
             <img src="chloe.jpg" alt="Daria Trubnikova" width="100%">
@@ -79,21 +77,17 @@
     </section>
     <section class="section about-me bg-gray">
         <div class="container about-me__container">
-            <h2 class="title about-me__title" id="about-me">About me</h2>
-            <p class="about-me__text">My thesis project at the university was related to programming, 
+            <h2 class="title about-me__title" id="about-me" data-i18n="about-me">About me</h2>
+            <p class="about-me__text" data-i18n="about-text-1">My thesis project at the university was related to programming, 
                 and since then, I have gotten into it. To my mind, front-end development 
                 is the first step for me on the path to full-stack web development.</p>
-            <p class="about-me__text">My thesis project at the university was related to programming, 
-                and since then, I have gotten into it. To my mind, front-end development 
-                is the first step for me on the path to full-stack web development.</p>
-            <p class="about-me__text">My thesis project at the university was related to programming, 
-                and since then, I have gotten into it. To my mind, front-end development 
-                is the first step for me on the path to full-stack web development.</p>
+            <p class="about-me__text" data-i18n="about-text-2">I consider diligence, the ability to learn quickly and possession of time management skills as my main 
+                personal qualities.</p>
         </div>
     </section>
     <section class="section skills">
         <div class="container skills__container">
-            <h2 class="title skills__title" id="skills">Skills</h2>
+            <h2 class="title skills__title" id="skills" data-i18n="skills">Skills</h2>
             <div class="skills__items">
                 <div class="skills__item skills-item">
                     <img src="html5logo.svg" alt="html5" width="90">
@@ -177,10 +171,10 @@
     </section>
     <section class="section code bg-gray">
         <div class="container code__container">
-            <h2 class="title code-example__title" id="code-example">Code example</h2>
-            <p class="code__text">
+            <h2 class="title code-example__title" id="code-example" data-i18n="code-example">Code example</h2>
+            <p class="code__text" data-i18n="code-text">
                 Code examples can be seen in my 
-                <a href="https://github.com/valkrelex">GitHub account</a> 
+                <a href="https://github.com/valkrelex" data-i18n="code-link">GitHub account</a> 
                  or you can see my FizzBuzz solving below:
             </p>
             <pre>
@@ -208,17 +202,17 @@
     </section>
     <div class="container section edu-eng__container">
             <section class="education">
-                <h2 class="title education__title" id="education">Education</h2>
-                <h3 class="education__subtitle">National University of Science and Technology</h3>
-                <span class="education__description">Bachelor of IT & Automated Control Systems</span>
+                <h2 class="title education__title" id="education" data-i18n="education">Education</h2>
+                <h3 class="education__subtitle" data-i18n="university">National University of Science and Technology «MISIS»</h3>
+                <span class="education__description" data-i18n="speciality">Bachelor of IT & Automated Control Systems</span>
                 <span class="education__period">2015-2019</span>
                 <h3 class="education__subtitle">Rolling Scopes School</h3>
                 <span class="education__description">Javascript/Front-end</span>
                 <span class="education__period">2022-...</span>
             </section>
             <section class="english">
-                <h2 class="title english__title" id="english">English level</h2>
-                <p class="english__text">
+                <h2 class="title english__title" id="english" data-i18n="english">English level</h2>
+                <p class="english__text" data-i18n="english-text">
                     I have passed IELTS Academic English with 5.5 score,
                     which is the border between B1 and B2 English levels.
                 </p>
@@ -226,17 +220,17 @@
     </div>
     <section class="section portfolio bg-gray">
         <div class="container portfolio__container">
-            <h2 class="title portfolio__title" id="portfolio">
+            <h2 class="title portfolio__title" id="portfolio" data-i18n="projects">
                 Projects
             </h2>
             <div class="portfolio__list">
                 <div class="portfolio__item">
                   <img class="portfolio__image" src="portfolio.JPG" alt="portfolio project" width="100%">
                   <div class="portfolio__description">
-                      <h3 class="portfolio__subtitle">Portfolio for the photographer</h3>
-                      <p class="portfolio__text">A training project, which made using HTML, CSS, Vanilla JavaScript and SASS.</p>
-                        <a href="https://rolling-scopes-school.github.io/valkrelex-JSFEPRESCHOOL/portfolio/index.html" class="btn portfolio__btn portfolio__deploy">Open project</a>
-                        <a href="https://github.com/rolling-scopes-school/valkrelex-JSFEPRESCHOOL/tree/portfolio/portfolio" class="btn portfolio__btn portfolio__code">Watch code</a>
+                      <h3 class="portfolio__subtitle" data-i18n="portfolio-title">Portfolio for the photographer</h3>
+                      <p class="portfolio__text" data-i18n="portfolio-info">A training project, which made using HTML, CSS, Vanilla JavaScript and SASS.</p>
+                        <a href="https://rolling-scopes-school.github.io/valkrelex-JSFEPRESCHOOL/portfolio/index.html" class="btn portfolio__btn portfolio__deploy" data-i18n="open-project" target="_blank">Open project</a>
+                        <a href="https://github.com/rolling-scopes-school/valkrelex-JSFEPRESCHOOL/tree/portfolio/portfolio" class="btn portfolio__btn portfolio__code" data-i18n="watch-code" target="_blank">Watch code</a>
                   </div>  
                 </div>
             </div>
@@ -245,7 +239,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <section class="contacts">
-                <h2 class="title contacts__title" id="contacts">Contact me</h2>
+                <h2 class="title contacts__title" id="contacts" data-i18n="contacts">Contact me</h2>
                     <ul class="contacts__list">
                         <li class="contacts__item">
                             <a href="tel:+79854242920" class="contacts-image__link">
@@ -280,5 +274,8 @@
             </div>
         </div>
     </footer>
+    <script src="highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
 </body>
 </html>
