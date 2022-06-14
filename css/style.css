@@ -10,16 +10,16 @@
 	font-family: 'Gilroy';
     font-weight: normal;
 	src: local('Gilroy'),
-		url(fonts/Gilroy-Medium.eot),
-        url(fonts/Gilroy-Medium.woff);
+		url(../fonts/Gilroy-Medium.eot),
+        url(../fonts/Gilroy-Medium.woff);
 }
 
 @font-face {
 	font-family: 'Gilroy';
     font-weight: bold;
 	src: local('Gilroy'),
-		url(fonts/Gilroy-Bold.eot),
-        url(fonts/Gilroy-Bold.woff);
+		url(../fonts/Gilroy-Bold.eot),
+        url(../fonts/Gilroy-Bold.woff);
 }
 
 * {
@@ -113,6 +113,7 @@ html, body {
 
 .main-navigation__link:hover {
     color: var(--text-dark);
+    transition: 0.3s;
 }
 
 /* about*/
@@ -165,6 +166,7 @@ html, body {
 
 .lang:hover {
     color: var(--text-dark);
+    transition: 0.3s;
 }
 
 .lang--active {
@@ -304,7 +306,7 @@ html, body {
     display: block;
     width: 27px;
     height: 27px;
-    background-image: url('Star.svg');
+    background-image: url('../img/Star.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -404,7 +406,7 @@ html, body {
 
 .footer__rss {
     width: 100px;
-    background-image: url("rss-logo.jpg");
+    background-image: url("../img/rss-logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 60px;
@@ -413,7 +415,7 @@ html, body {
 .footer__github {
     width: 40px;
     min-height: 40px;
-    background-image: url("github-logo.svg");
+    background-image: url("../img/github-logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
