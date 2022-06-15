@@ -92,7 +92,7 @@ const changeActive = (event) => {
 langBlock.addEventListener('click', changeActive);
 menuBtn.addEventListener('click', openMenu);
 navBlock.addEventListener('click', (event) => {
-    if(event.target.classList.contains('main-navigation__link') && (event.target.classList.contains('active'))) {
+    if(event.target.classList.contains('main-navigation__link') && (navBlock.classList.contains('active'))) {
         openMenu(event);
     } else {
         return 0;
