@@ -51,6 +51,8 @@ const i18Obj = {
 const langBlock = document.querySelector('.languages');
 const langBtns = document.querySelectorAll('.lang');
 let lang = 'en';
+const menuBtn = document.querySelector('.menu-btn');
+const navBlock = document.querySelector('.main-navigation__list');
 
 const getTranslate = (lang) => {
     const transateAll = document.querySelectorAll('[data-i18n]');
@@ -61,6 +63,18 @@ const getTranslate = (lang) => {
     })
 }
 //el.dataset.i18n !== lang
+
+const openMenu = (event) => {
+    if(menuBtn.classList.contains('active')) {
+        menuBtn.classList.remove('active');
+        navBlock.classList.remove('active');
+        langBlock.classList.remove('active');
+    } else {
+        menuBtn.classList.add('active');
+        navBlock.classList.add('active');
+        langBlock.classList.add('active');
+    }
+}
 
 const changeActive = (event) => {
     if(event.target.classList.contains('lang')) {
@@ -76,5 +90,15 @@ const changeActive = (event) => {
 }
 
 langBlock.addEventListener('click', changeActive);
+menuBtn.addEventListener('click', openMenu);
+navBlock.addEventListener('click', (event) => {
+    if(event.target.classList.contains('main-navigation__link')) {
+        openMenu(event);
+    } else {
+        return 0;
+    }
+});
+
+
 
 //   export default i18Obj;
